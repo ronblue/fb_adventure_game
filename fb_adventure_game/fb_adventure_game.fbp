@@ -1,0 +1,21 @@
+[Project]
+Version=3
+Description=fb_adventure_game
+Api=fb (FreeBASIC)
+[Make]
+Current=1
+1=debug mode window console,fbc -s console -gen gas -Wc -Ofast -exx
+Recompile=2
+Module=Module Build,fbc -c
+[TabOrder]
+TabOrder=1,2
+[File]
+1=main.bas
+2=help.bas
+Main=1
+[BreakPoint]
+1=
+2=
+[FileInfo]
+1=0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2=0,12,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
