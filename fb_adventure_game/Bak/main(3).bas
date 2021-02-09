@@ -178,10 +178,10 @@ SUB position.display_screen(x AS INTEGER, z AS INTEGER)
 END SUB
 
 SUB position.make_sound(f AS STRING, hWave AS INTEGER, t AS INTEGER)
-   
+   if fbs_Get_PlayingSounds() = 0 THEN
    fbs_Load_WAVFile(f , @hWave)
    fbs_Play_Wave(hWave , t)
-   
+   ENDIF
 END SUB
 
 SUB position.main()
@@ -244,7 +244,6 @@ SUB position.main()
             
       IF x = 2 THEN
          make_sound("sound\harp.wav" ,harpWav, 1)
-         sleep
       ENDIF
     
       

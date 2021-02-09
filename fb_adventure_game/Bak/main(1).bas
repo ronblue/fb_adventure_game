@@ -203,14 +203,14 @@ SUB position.main()
          EXIT sub
       ENDIF
       
-      IF x = 1 ANDalso z = 3 ANDALSO direc = "open door" THEN
+      IF x = 1 ANDalso z = 3 ANDALSO isOpen = FALSE ANDALSO direc = "open door" THEN
          isOpen = TRUE
          message = "YOU OPEN THE LOCKED DOOR WITH THE GOLDEN KEY - THE DOOR IS OPENED"      
       
-      ELSEIF x = 1 AND direc = "pick up key" THEN
+      ELSEIF x = 1 ANDALSO isOpen = FALSE ANDALSO direc = "pick up key" THEN
          message = key.item_name & " " & key.state(2)
       
-      ELSEIF x = 1 AND direc = "look around" THEN
+      ELSEIF x = 1 ANDALSO isOpen = FALSE ANDALSO direc = "look around" THEN
          message = key.item_name & " " & key.state(1)
       
       ELSEIF x = 1 ANDALSO isOpen = FALSE THEN
