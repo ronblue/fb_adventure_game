@@ -244,6 +244,7 @@ SUB position.main()
             
       IF x = 2 THEN
          make_sound("sound\harp.wav" ,harpWav, 1)
+         sleep
       ENDIF
     
       
