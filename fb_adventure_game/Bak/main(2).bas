@@ -203,7 +203,7 @@ SUB position.main()
          EXIT sub
       ENDIF
       
-      IF x = 1 ANDalso z = 3 ANDALSO ANDALSO isOpen = FALSE ANDALSO direc = "open door" THEN
+      IF x = 1 ANDalso z = 3 ANDALSO isOpen = FALSE ANDALSO direc = "open door" THEN
          isOpen = TRUE
          message = "YOU OPEN THE LOCKED DOOR WITH THE GOLDEN KEY - THE DOOR IS OPENED"      
       
